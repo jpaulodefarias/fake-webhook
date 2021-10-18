@@ -1,0 +1,21 @@
+{
+  "name": "fake-webhook",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "npx only-allow yarn",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "start": "node -r esm .",
+    "dev": "yarn lint:fix && yarn start"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4"
+  }
+}
